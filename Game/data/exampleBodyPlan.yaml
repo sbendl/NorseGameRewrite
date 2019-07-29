@@ -1,0 +1,54 @@
+---
+name: Humanoid
+symmetryType: mirror
+layout:
+  head:
+    neck:
+      upperTorso:
+        upperArm:
+          lowerArm:
+            palm:
+              finger
+        lowerTorso:
+          upperLeg:
+            lowerLeg:
+              foot:
+                toe
+joints:
+  neck_upper:
+    - head
+    - neck
+  neck_lower:
+    - neck
+    - upperTorso
+  shoulder:
+    - upperTorso
+    - upperArm
+  elbow:
+    - upperArm
+    - lowerArm
+  wrist:
+    - lowerArm
+    - palm
+  knuckle:
+    - palm
+    - finger
+  backJoint:
+    - upperTorso
+    - lowerTorso
+  hip:
+    - lowerTorso
+    - upperLeg
+  knee:
+    - upperLeg
+    - lowerLeg
+countPerSide: # Defaults to 1 if not specified
+  toe: 5
+  finger: 5
+
+trunkParts:
+  - head
+  - neck
+  - upperTorso
+  - lowerTorso
+

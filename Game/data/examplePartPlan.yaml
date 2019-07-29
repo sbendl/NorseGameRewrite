@@ -1,0 +1,7 @@
+---
+name: head
+layers: # first layer is outside, last layer is innermost
+  - skin
+  - muscle
+  - bone
+  - organContainer

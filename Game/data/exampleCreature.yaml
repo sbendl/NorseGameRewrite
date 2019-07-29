@@ -1,0 +1,66 @@
+---
+name: Block Giant
+using:
+  - exampleBodyPlan.yaml
+  - exampleBodyPlan.yaml
+childScale: .5
+scalingFactorSizeStD: .1
+scalingFactorStrength: .25
+femaleToMaleStrengthFactor: .95 # < 1 indicates females weaker > 1 indicates females stronger
+femaleToMakeSizeFactor: .9 # < 1 indicates females smaller  > 1 indicates females larger
+type: jotun
+meanSize: # in meters
+  head:
+    length: 1
+    width: 1
+    depth: 1
+  neck:
+    length: 1
+    width: 1
+    depth: 1
+  upperTorso:
+    length: 1
+    width: 1
+    depth: 1
+  lowerTorso:
+    length: 1
+    width: 1
+    depth: 1
+  upperArm:
+    length: 1
+    width: 1
+    depth: 1
+  lowerArm:
+    length: 1
+    width: 1
+    depth: 1
+  upperLeg:
+    length: 1
+    width: 1
+    depth: 1
+  lowerLeg:
+    length: 1
+    width: 1
+    depth: 1
+  palm:
+    length: 1
+    width: 1
+    depth: 1
+  finger:
+    length: 1
+    width: 1
+    depth: 1
+  toe:
+    length: 1
+    width: 1
+    depth: 1
+jointStrength:  # As multiple of weakest joint
+  neck_upper: 1
+  neck_lower: 1
+  shoulder: 1
+  elbow: 1
+  wrist: 1
+  knuckle: 1
+  backJoint: 1
+  hip: 1
+  knee: 1
