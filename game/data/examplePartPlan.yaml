@@ -4,4 +4,7 @@ layers: # first layer is outside, last layer is innermost
   - skin
   - muscle
   - bone
-  - organContainer
+  - organContainer:
+      brain:
+        critical: True
+        relativeSize: .9

@@ -1,13 +1,13 @@
 ---
 name: Block Giant
 using:
-  - exampleBodyPlan.yaml
-  - exampleBodyPlan.yaml
+  - ./game/data/exampleBodyPlan.yaml
+  - ./game/data/exampleBodyPlan.yaml
 childScale: .5
 scalingFactorSizeStD: .1
 scalingFactorStrength: .25
 femaleToMaleStrengthFactor: .95 # < 1 indicates females weaker > 1 indicates females stronger
-femaleToMakeSizeFactor: .9 # < 1 indicates females smaller  > 1 indicates females larger
+femaleToMaleSizeFactor: .9 # < 1 indicates females smaller  > 1 indicates females larger
 type: jotun
 meanSize: # in meters
   head:
