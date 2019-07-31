@@ -93,6 +93,18 @@ class BodyPart:     # Can infer if is a leaf part if no children - no need for s
         self.depth = -1     # Depth as viewed from front of body
 
 
+class Organ:
+
+    def __init__(self, name='_defaultName', parent_body=None, parent_part=None, relative_size=-1.0, critical=False,
+                 deathTime='_defaultTime'):
+        self.name = name
+        self.parent_body = parent_body
+        self.parent_part = parent_part
+        self.relative_size = relative_size
+        self.critical = critical
+        self.time_to_death = deathTime
+
+
 class Joint:
 
     def __init__(self):

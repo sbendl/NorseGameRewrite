@@ -1,5 +1,7 @@
 ---
 name: head
+using:
+  material: ./game/data/exampleMaterial.yaml
 layers: # first layer is outside, last layer is innermost
   - skin
   - muscle
@@ -7,4 +9,129 @@ layers: # first layer is outside, last layer is innermost
   - organContainer:
       brain:
         critical: True
+        deathTime: 1s
         relativeSize: .9
+...
+---
+name: neck
+using:
+  material: ./game/data/exampleMaterial.yaml
+layers: # first layer is outside, last layer is innermost
+  - skin
+  - muscle
+  - bone
+...
+---
+name: upperTorso
+using:
+  material: ./game/data/exampleMaterial.yaml
+layers: # first layer is outside, last layer is innermost
+  - skin
+  - muscle
+  - bone
+  - organContainer:
+      heart:
+        critical: True
+        deathTime: 5s
+        relativeSize: .1
+      lungs:
+        critical: True
+        deathTime: 3m
+        relativeSize: .8
+...
+---
+name: upperArm
+using:
+  material: ./game/data/exampleMaterial.yaml
+layers: # first layer is outside, last layer is innermost
+  - skin
+  - muscle
+  - bone
+...
+---
+name: lowerArm
+using:
+  material: ./game/data/exampleMaterial.yaml
+layers: # first layer is outside, last layer is innermost
+  - skin
+  - muscle
+  - bone
+...
+---
+name: palm
+using:
+  material: ./game/data/exampleMaterial.yaml
+layers: # first layer is outside, last layer is innermost
+  - skin
+  - muscle
+  - bone
+...
+---
+name: finger
+using:
+  material: ./game/data/exampleMaterial.yaml
+layers: # first layer is outside, last layer is innermost
+  - skin
+  - muscle
+  - bone
+...
+---
+name: lowerTorso
+using:
+  material: ./game/data/exampleMaterial.yaml
+layers: # first layer is outside, last layer is innermost
+  - skin
+  - muscle
+  - bone
+  - organContainer:
+      stomach:
+        critical: True
+        deathTime: 12h
+        relativeSize: .2
+      liver:
+        critical: True
+        deathTime: 3d
+        relativeSize: .4
+      intestine:
+        critical: False
+        relativeSize: .7
+      pancreas:
+        critical: False
+        relativeSize: .1
+...
+---
+name: upperLeg
+using:
+  material: ./game/data/exampleMaterial.yaml
+layers: # first layer is outside, last layer is innermost
+  - skin
+  - muscle
+  - bone
+...
+---
+name: lowerLeg
+using:
+  material: ./game/data/exampleMaterial.yaml
+layers: # first layer is outside, last layer is innermost
+  - skin
+  - muscle
+  - bone
+...
+---
+name: foot
+using:
+  material: ./game/data/exampleMaterial.yaml
+layers: # first layer is outside, last layer is innermost
+  - skin
+  - muscle
+  - bone
+...
+---
+name: toe
+using:
+  material: ./game/data/exampleMaterial.yaml
+layers: # first layer is outside, last layer is innermost
+  - skin
+  - muscle
+  - bone
+...

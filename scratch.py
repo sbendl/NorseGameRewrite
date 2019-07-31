@@ -1,10 +1,18 @@
 import yaml
 from game.lib import character
 
-bp = yaml.load(open('./game/data/exampleBodyPlan.yaml'))
-cp = yaml.load(open('./game/data/exampleCreature.yaml'))
-pp = yaml.load(open('./game/data/examplePartPlan.yaml'))
-tp = yaml.load(open('./game/data/exampleType.yaml'))
+cp = next(yaml.load_all(open('./game/data/exampleCreature.yaml')))
+
+
+parts = {}
+materials = {}
+for pp in yaml.load_all(open(cp['using']['partPlan'])):
+    print(pp)
+    parts[pp['name']] =
+
+bp = yaml.load_all(open(cp['using']['bodyPlan']))
+pp = yaml.load_all(open(cp['using']['partPlan']))
+tp = yaml.load_all(open(cp['using']['type']))
 
 print('done loading')
 

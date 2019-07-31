@@ -1,8 +1,9 @@
 ---
 name: Block Giant
 using:
-  - ./game/data/exampleBodyPlan.yaml
-  - ./game/data/exampleBodyPlan.yaml
+  partPlan: ./game/data/examplePartPlan.yaml
+  bodyPlan: ./game/data/exampleBodyPlan.yaml
+  type: ./game/data/exampleType.yaml
 childScale: .5
 scalingFactorSizeStD: .1
 scalingFactorStrength: .25
@@ -64,3 +65,4 @@ jointStrength:  # As multiple of weakest joint
   backJoint: 1
   hip: 1
   knee: 1
+...
