@@ -2,14 +2,16 @@
 name: head
 using:
   material: ./game/data/exampleMaterial.yaml
+  organ: ./game/data/exampleOrgan.yaml
 layers: # first layer is outside, last layer is innermost
-  - skin
-  - muscle
-  - bone
-  - organContainer:
+  - name: skin
+    material: softTissue
+  - name: muscle
+    material: softTissue
+  - name: bone
+    material: bone
+  - name: organContainer
       brain:
-        critical: True
-        deathTime: 1s
         relativeSize: .9
 ...
 ---
@@ -17,26 +19,29 @@ name: neck
 using:
   material: ./game/data/exampleMaterial.yaml
 layers: # first layer is outside, last layer is innermost
-  - skin
-  - muscle
-  - bone
+  - name: skin
+    material: softTissue
+  - name: muscle
+    material: softTissue
+  - name: bone
+    material: bone
 ...
 ---
 name: upperTorso
 using:
   material: ./game/data/exampleMaterial.yaml
+  organ: ./game/data/exampleOrgan.yaml
 layers: # first layer is outside, last layer is innermost
-  - skin
-  - muscle
-  - bone
-  - organContainer:
+  - name: skin
+    material: softTissue
+  - name: muscle
+    material: softTissue
+  - name: bone
+    material: bone
+  - name: organContainer
       heart:
-        critical: True
-        deathTime: 5s
         relativeSize: .1
       lungs:
-        critical: True
-        deathTime: 3m
         relativeSize: .8
 ...
 ---
@@ -44,46 +49,62 @@ name: upperArm
 using:
   material: ./game/data/exampleMaterial.yaml
 layers: # first layer is outside, last layer is innermost
-  - skin
-  - muscle
-  - bone
+  - name: skin
+    material: softTissue
+  - name: muscle
+    material: softTissue
+  - name: bone
+    material: bone
 ...
 ---
 name: lowerArm
 using:
   material: ./game/data/exampleMaterial.yaml
 layers: # first layer is outside, last layer is innermost
-  - skin
-  - muscle
-  - bone
+  - name: skin
+    material: softTissue
+  - name: muscle
+    material: softTissue
+  - name: bone
+    material: bone
 ...
 ---
 name: palm
 using:
   material: ./game/data/exampleMaterial.yaml
 layers: # first layer is outside, last layer is innermost
-  - skin
-  - muscle
-  - bone
+  - name: skin
+    material: softTissue
+  - name: muscle
+    material: softTissue
+  - name: bone
+    material: bone
 ...
 ---
 name: finger
 using:
   material: ./game/data/exampleMaterial.yaml
 layers: # first layer is outside, last layer is innermost
-  - skin
-  - muscle
-  - bone
+  - name: skin
+    material: softTissue
+  - name: muscle
+    material: softTissue
+  - name: bone
+    material: bone
 ...
 ---
 name: lowerTorso
 using:
   material: ./game/data/exampleMaterial.yaml
+  organ: ./game/data/exampleOrgan.yaml
 layers: # first layer is outside, last layer is innermost
-  - skin
-  - muscle
-  - bone
-  - organContainer:
+  - name: skin
+    material: softTissue
+  - name: muscle
+    material: softTissue
+  - name: bone
+    material: bone
+  - name: organContainer
       stomach:
         critical: True
         deathTime: 12h
@@ -104,34 +125,46 @@ name: upperLeg
 using:
   material: ./game/data/exampleMaterial.yaml
 layers: # first layer is outside, last layer is innermost
-  - skin
-  - muscle
-  - bone
+  - name: skin
+    material: softTissue
+  - name: muscle
+    material: softTissue
+  - name: bone
+    material: bone
 ...
 ---
 name: lowerLeg
 using:
   material: ./game/data/exampleMaterial.yaml
 layers: # first layer is outside, last layer is innermost
-  - skin
-  - muscle
-  - bone
+  - name: skin
+    material: softTissue
+  - name: muscle
+    material: softTissue
+  - name: bone
+    material: bone
 ...
 ---
 name: foot
 using:
   material: ./game/data/exampleMaterial.yaml
 layers: # first layer is outside, last layer is innermost
-  - skin
-  - muscle
-  - bone
+  - name: skin
+    material: softTissue
+  - name: muscle
+    material: softTissue
+  - name: bone
+    material: bone
 ...
 ---
 name: toe
 using:
   material: ./game/data/exampleMaterial.yaml
 layers: # first layer is outside, last layer is innermost
-  - skin
-  - muscle
-  - bone
+  - name: skin
+    material: softTissue
+  - name: muscle
+    material: softTissue
+  - name: bone
+    material: bone
 ...

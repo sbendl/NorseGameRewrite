@@ -81,16 +81,20 @@ class BodyPart:     # Can infer if is a leaf part if no children - no need for s
     They may also contain 'continuous organs' such as tendons and nerves that run the full length of the part.
     """
 
-    def __init__(self):
-        self.name = '_defaultName'
-        self.parent_body = None
-        self.parent_part = None
-        self.child_parts = []
-        self.layers = []    # index 0 is innermost layer, index -1 is outermost
-        self.continuous_organs = []
-        self.length = -1    # Length from last part connection to next part connection
-        self.width = -1     # Width as viewed from front of body
-        self.depth = -1     # Depth as viewed from front of body
+    def __init__(self, name='_defaultName', parent_body=None, parent_part=None, child_parts=None, layers=None,
+                 continuous_organs=None, length=-1, width=-1, depth=-1):
+        if child_parts is None:
+            self.child_parts = []
+        if layers is None:
+            self.layers = []
+        if continuous_organs is None:
+            self.continuous_organs = []
+        self.name = name
+        self.parent_body = parent_body
+        self.parent_part = parent_part
+        self.length = length    # Length from last part connection to next part connection
+        self.width = width    # Width as viewed from front of body
+        self.depth = depth     # Depth as viewed from front of body
 
 
 class Organ:
@@ -117,10 +121,9 @@ class Joint:
 
 class Layer:
 
-    def __init__(self):
-        self.material = None
-        self.name = '_defaultName'
-        self.next_layer_out = None
-        self.next_layer_in = None
-        self.thickness = -1
-        self.is_rigid = None
+    def __init__(self, name='_defaultName', material=None, next_layer_out=None, next_layer_in=None, thickness=-1):
+        self.material = material
+        self.name = name
+        self.next_layer_out = next_layer_out
+        self.next_layer_in = next_layer_in
+        self.thickness = thickness

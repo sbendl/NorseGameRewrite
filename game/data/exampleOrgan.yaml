@@ -1,0 +1,33 @@
+---
+name: brain
+critical: True
+deathTime: 1s
+...
+---
+name: heart
+critical: True
+deathTime: 5s
+...
+---
+name: lungs
+critical: True
+deathTime: 3m
+...
+---
+name: stomach
+critical: True
+deathTime: 12h
+...
+---
+name: liver
+critical: True
+deathTime: 3d
+...
+---
+name: intestine
+critical: False
+...
+---
+name: pancreas
+critical: False
+
