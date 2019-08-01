@@ -127,3 +127,11 @@ class Layer:
         self.next_layer_out = next_layer_out
         self.next_layer_in = next_layer_in
         self.thickness = thickness
+
+
+class OrganContainer(Layer):
+
+    def __init__(self, name='_defaultName', material=None, next_layer_out=None, next_layer_in=None, thickness=-1,
+                 contents=None):
+        super(OrganContainer, self).__init__(name, material, next_layer_out, next_layer_in, thickness)
+        self.contents=contents

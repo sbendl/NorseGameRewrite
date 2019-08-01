@@ -6,11 +6,17 @@ using:
 layers: # first layer is outside, last layer is innermost
   - name: skin
     material: softTissue
+    type: normal
   - name: muscle
     material: softTissue
+    type: normal
   - name: bone
     material: bone
-  - name: organContainer
+    type: normal
+  - name: brainCavity
+    type: organContainer
+    material: softTissue
+    contains:
       brain:
         relativeSize: .9
 ...
@@ -21,10 +27,13 @@ using:
 layers: # first layer is outside, last layer is innermost
   - name: skin
     material: softTissue
+    type: normal
   - name: muscle
     material: softTissue
+    type: normal
   - name: bone
     material: bone
+    type: normal
 ...
 ---
 name: upperTorso
@@ -34,11 +43,17 @@ using:
 layers: # first layer is outside, last layer is innermost
   - name: skin
     material: softTissue
+    type: normal
   - name: muscle
     material: softTissue
+    type: normal
   - name: bone
     material: bone
-  - name: organContainer
+    type: normal
+  - name: chestCavity
+    type: organContainer
+    material: softTissue
+    contains:
       heart:
         relativeSize: .1
       lungs:
@@ -51,10 +66,13 @@ using:
 layers: # first layer is outside, last layer is innermost
   - name: skin
     material: softTissue
+    type: normal
   - name: muscle
     material: softTissue
+    type: normal
   - name: bone
     material: bone
+    type: normal
 ...
 ---
 name: lowerArm
@@ -63,10 +81,13 @@ using:
 layers: # first layer is outside, last layer is innermost
   - name: skin
     material: softTissue
+    type: normal
   - name: muscle
     material: softTissue
+    type: normal
   - name: bone
     material: bone
+    type: normal
 ...
 ---
 name: palm
@@ -75,10 +96,13 @@ using:
 layers: # first layer is outside, last layer is innermost
   - name: skin
     material: softTissue
+    type: normal
   - name: muscle
     material: softTissue
+    type: normal
   - name: bone
     material: bone
+    type: normal
 ...
 ---
 name: finger
@@ -87,10 +111,13 @@ using:
 layers: # first layer is outside, last layer is innermost
   - name: skin
     material: softTissue
+    type: normal
   - name: muscle
     material: softTissue
+    type: normal
   - name: bone
     material: bone
+    type: normal
 ...
 ---
 name: lowerTorso
@@ -100,11 +127,17 @@ using:
 layers: # first layer is outside, last layer is innermost
   - name: skin
     material: softTissue
+    type: normal
   - name: muscle
     material: softTissue
+    type: normal
   - name: bone
     material: bone
-  - name: organContainer
+    type: normal
+  - name: abdomen
+    type: organContainer
+    material: softTissue
+    contains:
       stomach:
         critical: True
         deathTime: 12h
@@ -127,10 +160,13 @@ using:
 layers: # first layer is outside, last layer is innermost
   - name: skin
     material: softTissue
+    type: normal
   - name: muscle
     material: softTissue
+    type: normal
   - name: bone
     material: bone
+    type: normal
 ...
 ---
 name: lowerLeg
@@ -139,10 +175,13 @@ using:
 layers: # first layer is outside, last layer is innermost
   - name: skin
     material: softTissue
+    type: normal
   - name: muscle
     material: softTissue
+    type: normal
   - name: bone
     material: bone
+    type: normal
 ...
 ---
 name: foot
@@ -151,10 +190,13 @@ using:
 layers: # first layer is outside, last layer is innermost
   - name: skin
     material: softTissue
+    type: normal
   - name: muscle
     material: softTissue
+    type: normal
   - name: bone
     material: bone
+    type: normal
 ...
 ---
 name: toe
@@ -163,8 +205,11 @@ using:
 layers: # first layer is outside, last layer is innermost
   - name: skin
     material: softTissue
+    type: normal
   - name: muscle
     material: softTissue
+    type: normal
   - name: bone
     material: bone
+    type: normal
 ...
